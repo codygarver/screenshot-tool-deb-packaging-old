@@ -1,0 +1,5 @@
+PACKAGE (0.1) trusty; urgency=low
+
+  * Daily build.
+
+ -- Fabio Zaramella <ffabio.96.x@gmail.com>  Fri, 09 Jan 2015 18:37:43 +0100
