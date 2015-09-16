@@ -1,5 +1,5 @@
-PACKAGE (0.1) trusty; urgency=low
+screenshot-tool (0.1) trusty; urgency=medium
 
-  * Daily build.
+  * Initial release.
 
- -- Fabio Zaramella <ffabio.96.x@gmail.com>  Fri, 09 Jan 2015 18:37:43 +0100
+ -- Cody Garver <cody@elementary.io>  Tue, 15 Sep 2015 23:49:29 -0500

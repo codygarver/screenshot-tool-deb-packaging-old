@@ -1,7 +1,7 @@
 Source: screenshot-tool
 Section: graphics
 Priority: extra
-Maintainer: Fabio Zaramella <ffabio.96.x@gmail.com> 
+Maintainer: Cody Garver <cody@elementary.io> 
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 9),
                valac (>= 0.20),
@@ -9,9 +9,24 @@ Build-Depends: cmake (>= 2.8),
                libgtk-3-dev (>= 3.10),
                libnotify-dev,
                libgdk-pixbuf2.0-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.6
+Homepage: https://launchpad.net/screenshot-tool
+Vcs-Bzr: lp:screenshot-tool
+Vcs-Browser: https://code.launchpad.net/~fabiozaramella/screenshot-tool/trunk
 
 Package: screenshot-tool
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: A simple program to take screenshot in elementary OS.
+Description: Screenshot utility
+ A simple program screenshot utility for elementary OS.
+
+Package: screenshot-tool-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: screenshot-tool (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Enhances: screenshot-tool
+Description: Screenshot utility (debugging symbols)
+ A simple program screenshot utility for elementary OS.
+ .
+ This package contains debugging symbols for screenshot-tool.
